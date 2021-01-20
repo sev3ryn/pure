@@ -135,7 +135,7 @@ prompt_pure_preprompt_render() {
 	[[ -n $prompt_pure_state[username] ]] && preprompt_parts+=($prompt_pure_state[username])
 
 	# Set the path.
-	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%~%f')
+	preprompt_parts+=('%F{${prompt_pure_colors[path]}}%2~%f')
 
 	# Git branch and dirty status info.
 	typeset -gA prompt_pure_vcs_info
@@ -794,12 +794,12 @@ prompt_pure_setup() {
 		execution_time       yellow
 		git:arrow            cyan
 		git:stash            cyan
-		git:branch           242
-		git:branch:cached    red
-		git:action           yellow
-		git:dirty            218
+		git:branch           cyan
+		git:branch:cached    cyan
+		git:action           cyan
+		git:dirty            cyan
 		host                 242
-		path                 blue
+		path                 yellow
 		prompt:error         red
 		prompt:success       magenta
 		prompt:continuation  242
