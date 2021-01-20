@@ -801,7 +801,7 @@ prompt_pure_setup() {
 		host                 242
 		path                 yellow
 		prompt:error         red
-		prompt:success       magenta
+		prompt:success       green
 		prompt:continuation  242
 		user                 242
 		user:root            default
